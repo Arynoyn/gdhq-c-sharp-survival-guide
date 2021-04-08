@@ -12,5 +12,10 @@ public class Player : MonoBehaviour
         {
             _points += 10;
         }
+
+        if (_points >= 50)
+        {
+            Debug.Log("You Are Awesome!");
+        }
     }
 }
