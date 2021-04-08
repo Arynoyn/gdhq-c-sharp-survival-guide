@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _points;
+    private bool hasLoggedMessage;
 
     void Update()
     {
@@ -13,9 +14,10 @@ public class Player : MonoBehaviour
             _points += 10;
         }
 
-        if (_points >= 50)
+        if (_points >= 50 && !hasLoggedMessage)
         {
             Debug.Log("You Are Awesome!");
+            hasLoggedMessage = true;
         }
     }
 }
