@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &311090203
+--- !u!1 &124169522
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,37 +131,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 311090205}
-  - component: {fileID: 311090204}
+  - component: {fileID: 124169524}
+  - component: {fileID: 124169523}
   m_Layer: 0
-  m_Name: QuizCalculator
+  m_Name: ScriptPlaceHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &311090204
+--- !u!114 &124169523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311090203}
+  m_GameObject: {fileID: 124169522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6534ac2c0d1344599d82efaa5bfbdd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e110ef4e67d74ccdb33da88cdc14c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfQuizGrades: 5
-  _minQuizGrade: 0
-  _maxQuizGrade: 100
---- !u!4 &311090205
+  _points: 0
+--- !u!4 &124169524
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311090203}
+  m_GameObject: {fileID: 124169522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 130.83319, y: 2.4400418, z: 360.55396}
   m_LocalScale: {x: 1, y: 1, z: 1}
