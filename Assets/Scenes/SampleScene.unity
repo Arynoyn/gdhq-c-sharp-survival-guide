@@ -149,11 +149,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 124169522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204b4a327df6347529a025455f33da3d, type: 3}
+  m_Script: {fileID: 11500000, guid: e62159b90de5047518283259cc73c02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cube: {fileID: 767607038}
-  _cubeColorChoice: 0
+  WeaponID: 0
 --- !u!4 &124169524
 Transform:
   m_ObjectHideFlags: 0
@@ -279,7 +278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &767607039
 BoxCollider:
   m_ObjectHideFlags: 0
