@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrayMasterChallenge : MonoBehaviour
+public class ArrayMasterRandomChallenge : MonoBehaviour
 {
     [SerializeField] private string[] names;
     [SerializeField] private int[] ages;
@@ -12,12 +12,12 @@ public class ArrayMasterChallenge : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            int lastIndex = names.Length - 1; //0 based indexing
-            if (lastIndex >= 0)
+            if (names.Length > 0)
             {
-                string selectedKid = names[lastIndex];
-                string selectedKidsAge = ages.Length > lastIndex ? ages[lastIndex].ToString() : "Unavailable";
-                string selectedKidsFavoriteCar = cars.Length > lastIndex ? cars[lastIndex] : "Unavailable";
+                int randomIndex = Random.Range(0, names.Length); //0 based indexing exclusive
+                string selectedKid = names[randomIndex];
+                string selectedKidsAge = ages.Length > randomIndex ? ages[randomIndex].ToString() : "Unavailable";
+                string selectedKidsFavoriteCar = cars.Length > randomIndex ? cars[randomIndex] : "Unavailable";
                 Debug.Log($"{selectedKid} is {selectedKidsAge} and their favorite car is {selectedKidsFavoriteCar}");
             }
             else
